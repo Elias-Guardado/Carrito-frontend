@@ -1,0 +1,179 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero{
+    display: flex;
+    background-image: url(/img/banner.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.nav{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.nav .carrito-btn i{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.carrito-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.carrito-btn i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hero-content{
+    max-width: 600px;
+}
+
+.productos{
+    padding: 16px;
+}
+
+.productos .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.productos p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.card{
+    width: 500px;
+    background: #a64d13;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card button{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #136ea6;
+}
+
+.card button:hover{
+    background-color: #1593e1;
+}
+
+footer{
+    color: white;
+    background-color: #a64d13;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+/*Carrito modal*/
+.modal{
+    border:  none;
+    background-color: #a64d13;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    min-width: 250px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-action{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #136ea6;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td{
+    padding: 0.8rem;
+}
+
+table th{
+    text-align: center;
+    padding: 1rem;
+    font: 1.2rem;
+    color: white;
+}
+
+.modal table{
+    margin: 0 auto;
+}
+
+.tbody-scroll{
+    display: block;
+    max-height: 300px;
+    overflow: auto;
+    width: 100%;
+}
+
+.tbody-scroll tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.producto-img{
+    width: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.eliminar-btn{
+    background: none;
+    border: #e74c3c;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+.eliminar-btn:hover{
+    transform: scale(1.2);
+}

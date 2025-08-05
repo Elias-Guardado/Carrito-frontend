@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <button class="carrito-btn" id="abrir-carrito" aria-label="Abrir carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </nav>
+
+        <dialog class="modal" id="modal">
+            <div id="carrito">
+                <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th>Carrito</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody-scroll"></tbody>
+            </table>
+            </div>
+            
+            <button class="btn-action" id="comprar">
+                <i class="fas fa-credit-card"></i>
+            </button>
+            <button class="btn-action" id="vaciar-carrito">
+                <i class="fas fa-trash"> Vaciar carrito</i>
+            </button>
+            <button class="btn-action" id="cerrarModal">
+                <i class="fas fa-times"></i>
+            </button>
+        </dialog>
+
+        <div class="hero-content">
+            <h1 class="fade-in-top">BOOK STORE</h1>
+            <p class="fade-in-top">Invierte en un libro y libera tu mente</p>
+        </div>
+    </header>
+    <section class="productos" id="productos">
+        <p>PRODUCTOS</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="/img/producto_1.png" alt="">
+                <h4>Programación I</h4>
+                <p class="precio">$25</p>
+                <button  class="carrito-btn" data-id="1">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="/img/producto_2.png" alt="">
+                <h4>Programación II</h4>
+                <p class="precio">$30</p>
+                <button  class="carrito-btn" data-id="2">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="/img/producto_3.png" alt="">
+                <h4>El big Bang</h4>
+                <p class="precio">$15</p>
+                <button  class="carrito-btn" data-id="3">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="/img/producto_4.png" alt="">
+                <h4>Musica I</h4>
+                <p class="precio">$12</p>
+                <button  class="carrito-btn" data-id="4">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="/img/producto_5.png" alt="">
+                <h4>Cocina para tontos</h4>
+                <p class="precio">$12</p>
+                <button  class="carrito-btn" data-id="5">Agregar al carrito</button>
+            </div>
+            <div class="card">
+                <img src="/img/producto_6.png" alt="">
+                <h4>Dibujo primeros pasos</h4>
+                <p class="precio">$20</p>
+                <button  class="carrito-btn" data-id="6">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>Desarrollado por Elías Guardado</h3>
+        <p>2025</p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
